@@ -5,7 +5,7 @@ import axios from "axios";
 function Details({ data }) {
   return (
     <Layout>
-      <div className="flex flex-col justify-center py-14 md:py-20 lg:py-20 text-center">
+      <div className="flex flex-col justify-center py-14 md:py-60 lg:py-20 text-center">
         <div className="details-title">
           <h1 className="text-2xl font-bold py-5"> Details Page </h1>
         </div>
