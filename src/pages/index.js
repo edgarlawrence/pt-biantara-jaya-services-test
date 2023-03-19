@@ -18,6 +18,13 @@ export default function Home() {
 
   const router = useRouter();
 
+  const detailsHandler = (id) => {
+    router.push({
+      pathname: "/[id]",
+      query: { id: id },
+    });
+  };
+
   const pageCount = 3;
 
   const getPeople = async (pageNumber) => {
@@ -146,6 +153,7 @@ export default function Home() {
             {filteredData.map((item, index) => (
               <div key={index} className="flex justify-center">
                 <Card
+                  cardClick={`/${item.id}`}
                   idPerson={index}
                   avatars={item.avatar}
                   cardName={item.first_name}

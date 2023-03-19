@@ -12,6 +12,9 @@ const Navbar = () => {
     router.push("/login");
   };
 
+  const homeHandler = () => {
+    router.push("/");
+  };
   const dropdownHandler = () => {
     setOpen((prevOpen) => !prevOpen);
   };
@@ -22,10 +25,10 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="bg-login-img text-white font-bold flex flex-row text-center sm:flex-row sm:text-left justify-between items-center py-4 px-10 shadow sm:items-baseline w-full">
+    <nav className="bg-login-img text-white font-bold flex flex-row text-center sm:flex-row sm:text-left justify-between items-center py-4 px-10 shadow sm:items-baseline w-full cursor-pointer">
       <div className="mb-2 sm:mb-0">
         <a
-          href="/home"
+          onClick={homeHandler}
           className="text-2xl no-underline text-grey-darkest hover:text-blue-dark"
         >
           Find People
