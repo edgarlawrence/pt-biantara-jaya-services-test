@@ -5,12 +5,12 @@ import axios from "axios";
 function Details({ data }) {
   return (
     <Layout>
-      <div className="flex flex-col justify-center py-24 text-center">
+      <div className="flex flex-col justify-center py-14 md:py-20 lg:py-20 text-center">
         <div className="details-title">
           <h1 className="text-2xl font-bold py-5"> Details Page </h1>
         </div>
 
-        <div className="bg-login-img px-40 py-20 w-1/2 mx-auto rounded-xl text-white font-bold">
+        <div className="bg-login-img px-10 md:px-20 lg:px-40 py-20 md:w-1/2 mx-auto rounded-xl text-white font-bold">
           <div className="id-person py-2">
             <p> Id: {data.id} </p>
           </div>
